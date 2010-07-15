@@ -51,7 +51,7 @@ class PDFKit
   def to_pdf
     append_stylesheets
     
-    pdf = IO.popen(command, "w+")
+    pdf = IO.popen(command, "w+b")
     pdf.puts(@source.to_s) if @source.html?
     pdf.close_write
     result = pdf.gets(nil)
@@ -60,13 +60,14 @@ class PDFKit
   end
   
   def to_file(path)
-    File.open(path,'w') {|file| file << self.to_pdf}
+    File.open(path,'wb') {|file| file << self.to_pdf}
   end
   
   protected
   
     def wkhtmltopdf
-      @wkhtmltopdf ||= `which wkhtmltopdf-proxy`.chomp
+    # @wkhtmltopdf ||= `which wkhtmltopdf-proxy`.chomp
+	  @wkhtmltopdf ||= "c:\\Program Files\\wkhtmltopdf\\wkhtmltopdf.exe".chomp
     end
   
     def style_tag_for(stylesheet)
