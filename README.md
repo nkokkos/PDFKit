@@ -1,3 +1,9 @@
+# Forked version for windows xp systems
+
+I wanted to generate a pdf from my windows xp system since I was developing on that box. 
+Make sure that you have installed wkhtmltopdf for windows from
+h**p://code.google.com/p/wkhtmltopdf/downloads/detail?name=wkhtmltopdf-0.9.9-installer.exe&can=2&q= 
+
 # PDFKit
 
 Create PDFs using plain old HTML+CSS. Uses [wkhtmltopdf](http://github.com/antialize/wkhtmltopdf) on the backend which renders HTML using Webkit.
