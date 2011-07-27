@@ -2,7 +2,10 @@
 
 I wanted to generate a pdf from my windows xp system since I was developing on that box. 
 Make sure that you have installed wkhtmltopdf for windows from
-h**p://code.google.com/p/wkhtmltopdf/downloads/detail?name=wkhtmltopdf-0.9.9-installer.exe&can=2&q= 
+h**p://code.google.com/p/wkhtmltopdf/downloads/detail?name=wkhtmltopdf-0.9.9-installer.exe&can=2&q=
+
+Look at the commit history for the changes I made to this forked version. 
+ 
 
 # PDFKit
 
